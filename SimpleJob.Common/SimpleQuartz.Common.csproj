@@ -1,24 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="microsoft.extensions.hosting" Version="7.0.1" />
+    <PackageReference Include="microsoft.data.sqlclient" Version="5.1.1" />
     <PackageReference Include="nlog" Version="5.2.0" />
     <PackageReference Include="nlog.web.aspnetcore" Version="5.3.0" />
     <PackageReference Include="quartz" Version="3.6.2" />
     <PackageReference Include="quartz.extensions.dependencyinjection" Version="3.6.2" />
     <PackageReference Include="quartz.extensions.hosting" Version="3.6.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="nlog.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

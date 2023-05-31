@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using SimpleQuartz.Models;
 using System.Diagnostics;
 
@@ -8,7 +9,7 @@ namespace SimpleQuartz.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IOptions)
         {
             _logger = logger;
         }
